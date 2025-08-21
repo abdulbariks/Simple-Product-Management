@@ -4,12 +4,16 @@ import Highlights from "../../components/Highlights";
 import ProductCard from "../../components/ProductCard";
 
 async function getProducts() {
-  const res = await fetch("http://localhost:3000/api/products", {
-    cache: "no-store",
-  });
+  const res = await fetch(
+    `${
+      process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000"
+    }/api/products`,
+    {
+      cache: "no-store",
+    }
+  );
   return res.json();
 }
-
 export default async function Home() {
   const products = await getProducts();
   return (
