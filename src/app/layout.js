@@ -11,15 +11,14 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <Providers>
-        {" "}
-        <body className="bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100">
+    <html lang="en" suppressHydrationWarning={true}>
+      <body className="bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100">
+        <Providers>
           <Navbar />
           <main className="min-h-screen">{children}</main>
           <Footer />
-        </body>
-      </Providers>
+        </Providers>
+      </body>
     </html>
   );
 }
