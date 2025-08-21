@@ -67,10 +67,10 @@ npm install
 
 3. **Setup environment variables**
 
-MONGODB_URI=your-mongodb-connection-string
-NEXTAUTH_SECRET=your-secret
-GOOGLE_CLIENT_ID=your-google-client-id.apps.googleusercontent.com
-GOOGLE_CLIENT_SECRET=your-google-client-secret
+- MONGODB_URI=your-mongodb-connection-string
+- NEXTAUTH_SECRET=your-secret
+- GOOGLE_CLIENT_ID=your-google-client-id.apps.googleusercontent.com
+- GOOGLE_CLIENT_SECRET=your-google-client-secret
 
 3. **Run the development server**
 

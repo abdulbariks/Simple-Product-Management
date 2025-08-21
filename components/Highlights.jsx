@@ -7,11 +7,11 @@ export default function Highlights() {
   ];
 
   return (
-    <section className="py-16 bg-white dark:bg-gray-900 text-center">
-      <h2 className="text-3xl font-bold mb-10 text-gray-900 dark:text-white">
+    <section className="w-11/12 mx-auto py-16 bg-white dark:bg-gray-900 text-center">
+      <h2 className="text-3xl font-bold mb-10 text-blue-600 dark:text-white">
         Why Choose Us?
       </h2>
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto px-6">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
         {highlights.map((item, idx) => (
           <div
             key={idx}

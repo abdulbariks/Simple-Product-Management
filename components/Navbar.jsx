@@ -8,7 +8,7 @@ export default function Navbar() {
   return (
     <nav className="w-full bg-white dark:bg-gray-900 shadow-md px-6 py-4 flex justify-between items-center">
       <Link href="/" className="text-2xl font-bold text-blue-600">
-        MyShop
+        Simple Product Management
       </Link>
       <div className="space-x-6">
         <Link href="/products" className="hover:text-blue-500">

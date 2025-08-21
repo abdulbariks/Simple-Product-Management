@@ -12,7 +12,9 @@ export default async function ProductsPage() {
 
   return (
     <div className="p-10">
-      <h1 className="text-4xl font-bold mb-6">Products</h1>
+      <h1 className="text-4xl font-bold mb-6 text-blue-600 text-center">
+        Products
+      </h1>
       <div className="grid grid-cols-3 gap-6">
         {products.map((p) => (
           <ProductCard key={p._id} product={p} />
